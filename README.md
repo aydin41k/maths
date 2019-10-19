@@ -3,6 +3,8 @@
 
 I originally developed it to make it fun for my son to learn basic maths. Then used it to make it fun for myself to learn React.
 
+The code is live (and editable) on Codepen: https://codepen.io/aydin4ik/pen/WMXXOQ
+
 Always looking for contributions/improvements/etc. PR's are welcome. 
 
 How to PR: https://help.github.com/en/articles/creating-a-pull-request
