@@ -6,7 +6,7 @@ import {
   Operator,
   Result,
   CheckButton,
-} from "../helperFunctions";
+} from "./helperFunctions";
 
 export default function Equation(props) {
   const [currentEquation, setCurrentEquation] = React.useState({
@@ -24,6 +24,7 @@ export default function Equation(props) {
     const correctAnswer = eval(
       `${currentEquation.num1}${currentEquation.operator}${currentEquation.num2}`
     );
+
     if (userAnswer == correctAnswer) {
       alert("Correct answer");
       props.callback(true);
