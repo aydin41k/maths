@@ -14,7 +14,7 @@ body {
 }
 button {
   padding:0.3em;
-  border:none;
+  border:1px solid transparent;
   border-radius:5px;
   background-color:#cc3311;
   color:#fff;
@@ -56,9 +56,6 @@ button:focus {
   text-align:center;
 }    
 
-#equation > div > * {
-  margin-top:1em;
-}
 
 #result {
   font-size:1em;
@@ -93,4 +90,23 @@ button:focus {
     //order:2;
     //flex:1;
   }
+}
+
+.equationContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.equationContainer input {
+  font: inherit;
+  width: 8rem;
+  background: transparent;
+}
+
+
+.equationContainer button {
+  display: block;
+  align-self: stretch;
 }
