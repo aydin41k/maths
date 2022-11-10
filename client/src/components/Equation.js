@@ -9,9 +9,10 @@ import {
 } from "./helperFunctions";
 
 export default function Equation(props) {
+  //console.log(props.level);
   const [currentEquation, setCurrentEquation] = React.useState({
-    num1: randomNumber(),
-    num2: randomNumber(),
+    num1: randomNumber(props.level),
+    num2: randomNumber(props.level),
     operator: operators[randomNumber(operators.length)],
   });
 
