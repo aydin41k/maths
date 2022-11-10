@@ -1,9 +1,7 @@
 const operators = ["+", "-"];
 
-const limit = 10;
-
-function randomNumber(limit = 10) {
-  return Math.floor(Math.max(Math.random() * limit));
+function randomNumber(max) {
+  return Math.floor(Math.max(Math.random() * max));
 }
 
 function Number(props) {
@@ -29,12 +27,4 @@ function CheckButton(props) {
     </button>
   );
 }
-export {
-  operators,
-  limit,
-  randomNumber,
-  Number,
-  Operator,
-  Result,
-  CheckButton,
-};
+export { operators, randomNumber, Number, Operator, Result, CheckButton };
